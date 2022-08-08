@@ -44,7 +44,7 @@ const Projects = ({ projects }: ProjectProps): JSX.Element => (
       <title>Projects</title>
     </Head>
     <Container alignItems="center">
-      <Title>Projects</Title>
+      <Title color='rgb(116, 161, 248)'>Projects</Title>
       <Text textAlign="center">
         You can find them on my&nbsp;
         <Link href="https://github.com/siddhantsharma301">Github</Link>.

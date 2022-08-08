@@ -5,6 +5,7 @@ import Grid, { GridProps } from './Grid';
 
 export interface CardProps extends GridProps {
   selected?: boolean;
+  backgroundColor? : string;
 }
 
 const Card = styled(Grid)<CardProps>`

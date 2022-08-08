@@ -38,20 +38,20 @@ const Button = styled.button<
         variants: {
             primary: {
                 color: 'white',
-                backgroundColor: 'rgb(116, 161, 248)',
+                backgroundColor: 'rgb(67, 70, 104)',
                 '&:hover': {
-                color: 'white',
-                backgroundColor: 'black',
-                transform: 'scale(1.04)',
+                    color: 'white',
+                    backgroundColor: 'rgb(116, 161, 248)',
+                    transform: 'scale(1.04)',
                 },
             },
             secondary: {
                 color: 'black',
-                backgroundColor: '#f5f6fa',
+                backgroundColor: 'rgb(245, 246, 250)',
                 '&:hover': {
-                color: 'white',
-                backgroundColor: 'black',
-                transform: 'scale(1.04)',
+                    color: 'white',
+                    backgroundColor: 'rgb(116, 161, 248)',
+                    transform: 'scale(1.04)',
                 },
             },
         },

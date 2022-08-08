@@ -119,7 +119,7 @@ const About = ({ experiences }: AboutProps) : JSX.Element => {
           </Head>
           <Container alignContent="center" alignItems="center">
             {/* <Title fontSize={['3rem', '3rem']} color='rgba(116, 161, 248, 1)'> */}
-            <Title color='rgba(116, 161, 248, 1)'>
+            <Title color='rgb(116, 161, 248)'>
               About Me
             </Title>
             <Container maxWidth={['100%', '720px']} marginY="2rem">
@@ -152,8 +152,8 @@ const About = ({ experiences }: AboutProps) : JSX.Element => {
             >
               {stacks.map(({ Icon, url }, i) => (
                 <Link href={url} key={url}>
-                  <Card backgroundColor="rgba(236, 236, 236, 1)" key={i}>
-                    <IconContext.Provider value={{ color: 'rgba(110, 161, 248, 1)' }}>
+                  <Card backgroundColor="rgb(67, 70, 104)" key={i}>
+                    <IconContext.Provider value={{ color: 'white' }}>
                       <Icon size="2rem" />
                     </IconContext.Provider>
                   </Card>
@@ -186,7 +186,7 @@ const About = ({ experiences }: AboutProps) : JSX.Element => {
                 justifyItems="flex-start"
                 gridGap="1rem"
                 paddingY="2rem"
-                borderBottom="1px solid rgba(0,0,0,0.1)"
+                // borderBottom="1px solid rgb(245, 246, 250)"
               >
                 <Container width="100%">
                   <Text>{data.date}</Text>

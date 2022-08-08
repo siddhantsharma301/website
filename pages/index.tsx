@@ -50,8 +50,7 @@ const Home = (): JSX.Element => (
           >
             <Link href="mailto:hello@shellbear.me">
               <Button 
-                width="100%" 
-                backgroundColor='rgb(153, 153, 153)'
+                width="100%"
               >
                 Hit me up here...
               </Button>

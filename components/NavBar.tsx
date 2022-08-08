@@ -36,7 +36,7 @@ const NavLink = styled.a`
   font-weight: 500;
   transition: opacity 0.3s ease 0s;
   &:hover {
-    opacity: 0.5;
+    color: rgb(116, 161, 248);
   }
 `;
 
@@ -112,7 +112,7 @@ const NavBar = ({ isOpen, onOpen, onClose }: NavProps): JSX.Element => {
             gridTemplateColumns="repeat(4, auto)"
             style={{
               borderRadius: '25px',
-              background: 'rgba(24, 24, 24, 1)',
+              background: 'rgb(29, 29, 33)',
               padding: '15px',
               position: 'relative',
               color: 'white'
