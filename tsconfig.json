@@ -16,12 +16,6 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      // "@icons": [
-      //   "icons"
-      // ],
-      // "@icons/*": [
-      //   "icons/*"
-      // ],
       "@styles/*": [
         "styles/*"
       ],

@@ -12,7 +12,6 @@ interface ProjectProps {
 
 const ProjectImage = styled(Image)`
   width: 100%;
-  max-width: 50vw;
   height: 300px; 
   object-fit: cover;
   border-radius: 4px;
@@ -21,8 +20,7 @@ const ProjectImage = styled(Image)`
     transform: scale(1.02);
   }
 
-  .mobile {
-    max-width: 100vw;
+  @media only screen and (max-width: 640px) {
     height: auto; 
   }
 `

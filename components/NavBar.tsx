@@ -1,10 +1,11 @@
 import { useRouter } from 'next/router';
 import React from 'react';
 import styled from 'styled-components';
+import { IconContext } from 'react-icons';
+import { IoClose as Close, IoMenu as Menu } from 'react-icons/io5';
 
 import Grid from './Grid';
 import Container from './Container';
-import { Menu, Close } from './icons'
 
 const states: { [key: string]: React.CSSProperties } = {
     '/': {
@@ -84,19 +85,22 @@ const NavBar = ({ isOpen, onOpen, onClose }: NavProps): JSX.Element => {
         <Container display={['none', 'none', 'flex']}>
           <NavLink href="/" color='rgba(110, 161, 248, 1)'>Siddhant Sharma</NavLink>
         </Container>
-        <MenuContainer display={['flex', 'none', 'none']}>
+        <MenuContainer display={['flex', 'none', 'none']} marginBottom="1rem" marginLeft="1rem" >
           {isOpen ? (
-            <Close
-              size="2rem"
-              style={{ margin: '-0.3rem', color: 'white' }}
-              onClick={(evt: any) => evt.type === 'click' && onClose()}
-            />
+            <IconContext.Provider value={{ color: 'white' }}>
+              <Close
+                size="2rem"
+                style={{ margin: '-0.3rem' }}
+                onClick={(evt: any) => evt.type === 'click' && onClose()}
+              />
+            </IconContext.Provider>
           ) : (
-            <Menu
-              size="1.6rem"
-              onClick={(evt: any) => evt.type === 'click' && onOpen()}
-              style={{ color: 'white' }}
-            />
+            <IconContext.Provider value={{ color: 'white' }}>
+              <Menu
+                size="1.6rem"
+                onClick={(evt: any) => evt.type === 'click' && onOpen()}
+              />
+            </IconContext.Provider>
           )}
         </MenuContainer>
         {isOpen && (
