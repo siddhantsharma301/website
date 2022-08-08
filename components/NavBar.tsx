@@ -88,13 +88,14 @@ const NavBar = ({ isOpen, onOpen, onClose }: NavProps): JSX.Element => {
           {isOpen ? (
             <Close
               size="2rem"
-              style={{ margin: '-0.3rem', color: 'rgb(29, 29, 33)' }}
+              style={{ margin: '-0.3rem', color: 'white' }}
               onClick={(evt: any) => evt.type === 'click' && onClose()}
             />
           ) : (
             <Menu
               size="1.6rem"
               onClick={(evt: any) => evt.type === 'click' && onOpen()}
+              style={{ color: 'white' }}
             />
           )}
         </MenuContainer>
