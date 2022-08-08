@@ -99,7 +99,13 @@ const NavBar = ({ isOpen, onOpen, onClose }: NavProps): JSX.Element => {
           )}
         </MenuContainer>
         {isOpen && (
-          <Grid gridTemplateColumns="1fr" style={{ fontSize: '2rem' }} py="3rem">
+          <Grid 
+            gridTemplateColumns="1fr" 
+            style={{ 
+              fontSize: '2rem',
+              background: 'rgb(29, 29, 33)'
+            }}
+             py="3rem">
             <Links />
           </Grid>
         )}

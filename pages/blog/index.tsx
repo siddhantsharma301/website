@@ -13,6 +13,11 @@ interface BlogProps {
 const BlogImage = styled(Image)`
   border-radius: 5px;
   max-width: 50vw;
+
+  .mobile {
+    max-width: 100vw;
+    height: auto;
+  }
 `;
 
 const Blog: NextPage<BlogProps> = ({ pages }) => {
