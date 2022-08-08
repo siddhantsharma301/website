@@ -88,7 +88,7 @@ const NavBar = ({ isOpen, onOpen, onClose }: NavProps): JSX.Element => {
           {isOpen ? (
             <Close
               size="2rem"
-              style={{ margin: '-0.3rem' }}
+              style={{ margin: '-0.3rem', color: 'rgb(29, 29, 33)' }}
               onClick={(evt: any) => evt.type === 'click' && onClose()}
             />
           ) : (

@@ -20,6 +20,11 @@ const ProjectImage = styled(Image)`
   :hover {
     transform: scale(1.02);
   }
+
+  .mobile {
+    max-width: 100vw;
+    height: auto; 
+  }
 `
 
 const ProjectContainer = styled(Container)`
