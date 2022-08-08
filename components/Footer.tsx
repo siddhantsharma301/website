@@ -43,16 +43,16 @@ const Footer = (): JSX.Element => {
                 icon: SiGithub,
             },
             {
+              url: 'https://linkedin.com/in/sharma-sid',
+              icon: SiLinkedin,
+            },
+            {
                 url: 'https://twitter.com/clearlynotsid',
                 icon: SiTwitter,
             },
             {
                 url: 'mailto:siddhantsharma@berkeley.edu',
                 icon: MdMail,
-            },
-            {
-                url: 'https://linkedin.com/in/sharma-sid',
-                icon: SiLinkedin,
             },
     //   {
     //     url: 'https://instagram.com/croissant2france',
