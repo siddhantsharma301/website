@@ -48,7 +48,7 @@ const Home = (): JSX.Element => (
             justifyItems="stretch"
             alignItems="stretch"
           >
-            <Link href="mailto:hello@shellbear.me">
+            <Link href="mailto:siddhantsharma@berkeley.edu">
               <Button 
                 width="100%"
               >

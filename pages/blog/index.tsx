@@ -36,7 +36,7 @@ const Blog: NextPage<BlogProps> = ({ pages }) => {
           Coming soon...
         </Text>
       </Container>
-      {/* <Grid gridTemplateColumns={['1fr', '1fr 1fr']} gridGap={['3rem', '2rem']}>
+      <Grid gridTemplateColumns={['1fr', '1fr 1fr']} gridGap={['3rem', '2rem']}>
         {pages.map(({ title, uri, date, cover }, i) => (
           <Link key={i} href={uri}>
             <Card padding={[0]} margin={[0]}>
@@ -79,7 +79,7 @@ const Blog: NextPage<BlogProps> = ({ pages }) => {
             </Card>
           </Link>
         ))}
-      </Grid> */}
+      </Grid>
     </Container>
   );
 };

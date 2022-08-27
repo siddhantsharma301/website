@@ -41,6 +41,12 @@ const ProjectButton = styled(Button)`
   padding: 12px 30px;
 `;
 
+const ProjectLink = styled(Link)`
+  :hover {
+    text-decoration: underline;
+  }
+`;
+
 const Projects = ({ projects }: ProjectProps): JSX.Element => (
   <Container marginBottom="5rem">
     <Head>
@@ -50,7 +56,7 @@ const Projects = ({ projects }: ProjectProps): JSX.Element => (
       <Title color='rgb(116, 161, 248)'>Projects</Title>
       <Text textAlign="center">
         You can find them on my&nbsp;
-        <Link href="https://github.com/siddhantsharma301">Github</Link>.
+        <ProjectLink href="https://github.com/siddhantsharma301">Github</ProjectLink>.
       </Text>
     </Container>
     <Grid

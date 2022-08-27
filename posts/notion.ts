@@ -12,7 +12,12 @@ export interface Page extends PageInfo {
     date: string;
 }
 
-export const POSTS = {};
+export const POSTS = {
+    'privacy-isnt-a-right': {
+        date: new Date('2022-08-09').toDateString(),
+        uri: 'clearlynotsid/Privacy-isn-t-a-Right-but-it-Should-c2b2dad0f0474f2c9c48e10c17b99e20',
+      },
+};
 
 export const getPageInfo = (page: ExtendedRecordMap): PageInfo => {
     const info: PageInfo = {
