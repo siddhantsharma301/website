@@ -13,9 +13,9 @@ export interface Page extends PageInfo {
 }
 
 export const POSTS = {
-    'privacy-isnt-a-right': {
-        date: new Date('2022-08-09').toDateString(),
-        uri: 'clearlynotsid/Privacy-isn-t-a-Right-but-it-Should-c2b2dad0f0474f2c9c48e10c17b99e20',
+    'dag-bft-consensus': {
+        date: new Date('2022-09-25').toDateString(),
+        uri: 'clearlynotsid/DAG-Based-BFT-Consensus-310e554f99e0407d9ddbb7087a7e63f1',
       },
 };
 
