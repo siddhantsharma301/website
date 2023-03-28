@@ -6,9 +6,6 @@ import Container from './Container';
 import Footer from './Footer';
 import NavBar from './NavBar';
 import styles from '@styles/Home.module.css';
-import { useDarkMode } from './ThemeToggle';
-import { darkTheme, lightTheme } from '@styles/themes';
-import { GlobalStyles } from './GlobalStyles';
 
 type LayoutProps = {
   children?: React.ReactNode;
@@ -21,15 +18,9 @@ const Layout: React.FC<LayoutProps> = ({
 }) => {
   const [isOpen, setIsOpen] = React.useState(false);
 
-  // const [theme, themeToggler] = useDarkMode();
-  // const themeMode = theme === 'light' ? lightTheme : darkTheme;
-  const [theme, setTheme] = useState("light");
-  const isDarkTheme = theme === "dark";
-  const toggleTheme = () => setTheme(isDarkTheme ? "light" : "dark");
-
   return (
-    <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme }>
-      <GlobalStyles />
+    <>
+      {/* <GlobalStyles /> */}
       <div className={styles.container}>
         <Head>
           <title>{title}</title>
@@ -54,15 +45,13 @@ const Layout: React.FC<LayoutProps> = ({
           isOpen={isOpen}
           onOpen={() => setIsOpen(true)}
           onClose={() => setIsOpen(false)}
-          theme={theme}
-          setTheme={toggleTheme}
         />
         <Container justifyContent="space-between" alignContent="space-between">
           {!isOpen && <main className={styles.main}>{children}</main>}
           <Footer />
         </Container>
       </div>
-    </ThemeProvider>
+    </>
   );
 };
 

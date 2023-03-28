@@ -6,8 +6,6 @@ import { IoClose as Close, IoMenu as Menu } from 'react-icons/io5';
 
 import Grid from './Grid';
 import Container from './Container';
-import ThemeToggle from './ThemeToggle';
-
 const states: { [key: string]: React.CSSProperties } = {
     '/': {
       left: '6px',
@@ -50,8 +48,6 @@ interface NavProps {
     isOpen: boolean;
     onOpen: () => void;
     onClose: () => void;
-    theme: string;
-    setTheme: () => void;
 }
 
 const Links = (): JSX.Element => (
@@ -63,7 +59,7 @@ const Links = (): JSX.Element => (
     </>
 );
 
-const NavBar = ({ isOpen, onOpen, onClose, theme, setTheme }: NavProps): JSX.Element => {
+const NavBar = ({ isOpen, onOpen, onClose }: NavProps): JSX.Element => {
     const router = useRouter();
     let navStyle = states['/'];
   
@@ -148,7 +144,6 @@ const NavBar = ({ isOpen, onOpen, onClose, theme, setTheme }: NavProps): JSX.Ele
         </Container>
         <Container alignContent="flex-end" display={['none', 'none', 'flex']}>
           {/* <NavLink href="mailto:siddhantsharma@berkeley.edu">Contact</NavLink> */}
-          <ThemeToggle theme={theme} setTheme={setTheme}/>
         </Container>
       </Grid>
     );
